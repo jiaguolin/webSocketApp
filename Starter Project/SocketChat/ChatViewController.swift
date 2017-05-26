@@ -253,11 +253,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             tvMessageEditor.resignFirstResponder()
             SocketIOManager.sharedInstance.sendStopTypingMessage(nickname: nickname)
         }
+        
     }
-    
-    
-    
-    
+
     // MARK: UITableView Delegate and Datasource Methods
     
     func numberOfSections(in tableView: UITableView) -> Int {
